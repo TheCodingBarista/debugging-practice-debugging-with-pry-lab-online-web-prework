@@ -1,5 +1,8 @@
+require 'pry'
+
 class Person
   attr_accessor :name, :candy_lover
+  binding.pry
 
   def initialize(name, candy_lover)
     @name = name
@@ -9,6 +12,7 @@ class Person
   def tall?
     true
   end
+
 
   def basketball_player?
     false
